@@ -1,3 +1,33 @@
 p {
   font-family: Lato;
 }
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://stackblitz.com/files/angular-cv-2135-jkm-3bddty/github/janusmilan16/currency-pipe-jkm-2135/main/image/download.jpg);
+  padding: 30px;
+  width: 100%;
+}
+
+div {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: rgba(0, 220, 158, 0.1);
+}
+div h1 {
+  color: #0013e5;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: 'Staatliches', cursive;
+}

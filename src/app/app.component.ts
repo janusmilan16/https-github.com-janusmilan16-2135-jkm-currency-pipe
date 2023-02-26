@@ -1,10 +1,30 @@
-import { Component, VERSION } from '@angular/core';
+import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+selector: 'app-root',
+templateUrl: './app.component.html',
+styleUrls: ['./app.component.css']
 })
-export class AppComponent  {
-  name = 'Janus Milan' + VERSION.major;
+export class AppComponent {
+title = 'pipes-reactive';
+presentDate = new Date();
+
+price : number = 2000;
+
+
+Fruits = ["Apple", "Orange", "Grapes","Mango", "Kiwi","pomegrante"];
+
+
+today0$ = new Observable<Date>((Observer) => {
+setInterval(() => {
+Observer.next(new Date());
+}, 1000);
+});
+ decimalNum1 : number = 8.7598623;
+ decimalNum2 : number = 5.43;
+ decimalNum3 : number = 6.21;
+ decimalNum4 : number = 7.34;
+ decimalNum5 : number = 8.43;
+
 }
